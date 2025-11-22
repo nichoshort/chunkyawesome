@@ -306,7 +306,7 @@ def layout_aware_chunk(html_src: str, max_chars_hint: int) -> List[str]:
 class STEEmbedder:
     def __init__(self, model_name: str):
         # Try token from env or HF cache (after `huggingface-cli login`)
-        token = os.getenv("HF_TOKEN") or HfFolder.get_token()
+        token = os.getenv("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") or HfFolder.get_token()
         try:
             try:
                 self.model = SentenceTransformer(model_name, token=token, trust_remote_code=True)
